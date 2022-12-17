@@ -1,0 +1,60 @@
+form {
+    width: 800px;
+    height: 500px;
+    border: 2px solid black;
+    margin: auto;
+    /* ! */
+    position: relative;
+    background-color: khaki;
+}
+
+h3 {
+    /* по центру текст */
+    text-align: center;
+}
+
+.Name {
+    width: 250px;
+    height: 30px;
+    border: 2px solid black;
+    position: absolute;
+    left: 90px;
+    top: 80px;
+}
+
+.Email {
+    width: 250px;
+    height: 30px;
+    border: 2px solid black;
+    position: absolute;
+    left: 450px;
+    top: 80px;
+}
+
+.Subject {
+    width: 610px;
+    height: 40px;
+    border: 2px solid black;
+    position: absolute;
+    left: 90px;
+    top: 150px;
+}
+
+.Message {
+    width: 610px;
+    height: 110px;
+    border: 2px solid black;
+    position: absolute;
+    left: 90px;
+    top: 240px;
+}
+
+.Send {
+    width: 150px;
+    height: 50px;
+    border: 2px solid black;
+    position: absolute;
+    left: 560px;
+    top: 390px;
+    background-color: white;
+}

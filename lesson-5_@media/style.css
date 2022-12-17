@@ -1,0 +1,65 @@
+.fixed {
+    width: 800px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: black;
+    margin: 20px;
+}
+
+.ruber {
+    /* ризинова верстка коли в % -> ізі */
+    width: 40%;
+    display: inline-block;
+    height: 100px;
+    border: 1px solid black;
+    background-color: black;
+    margin: 20px;
+}
+
+
+/* початковий стиль для селектора ! */
+
+.adaptive {
+    width: 40%;
+    display: inline-block;
+    height: 100px;
+    border: 1px solid black;
+    background-color: blue;
+    margin: 20px;
+}
+
+
+/* брейкпоїнт */
+
+
+/* те що в ()  це наче if про розмір сторінки;після @media можна відступ робити і можна без відступу, щоб бачити зміни требе збільшувати і зменшувати масштаб сторінки */
+
+@media(min-width:800px) and (max-width:1000px) {
+    /* а тут параметри для селектора  - лиш ті які мінятись повинні */
+    .adaptive {
+        display: flex;
+        width: 200px;
+        height: 100px;
+        background-color: rgb(35, 245, 35);
+        margin: 20px;
+        color: black;
+    }
+}
+
+
+/* уважно з відступами і лиш необхідне для змін */
+
+@media (min-width:1000px) and (max-width:1200px) {
+    .adaptive {
+        background-color: orange;
+        color: darkblue;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1400px) {
+    .adaptive {
+        background-color: rgb(252, 252, 236);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(203, 46, 195);
+    }
+}

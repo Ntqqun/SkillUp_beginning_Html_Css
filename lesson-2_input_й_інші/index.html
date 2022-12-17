@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_2</title>
+
+    <!-- 2-й вид підкючення стилю (глобальний)-->
+    <!-- style ззовні -->
+    <!-- <style>
+        p {
+            color: green;
+        }
+    </style> -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form>
+
+        <!--Різних input буває приблизно 9-->
+        <!-- 1 -->
+        <input type="text" placeholder="Enter name" name="login">
+        <!-- 2 -->
+        <input type="password" placeholder="Enter password" name="password">
+
+        <!-- 3 -->
+        <!--Три способи створення кнопки , але краще тег button-->
+        <button type="submit">Apply</button>
+        <input type="button" value="Send">
+        <input type="submit" value="Press me">
+
+        <!-- 4 -->
+        <!-- checkbox ізі -->
+        <input type="checkbox">
+
+        <!-- 5 -->
+        <!-- select + option це вибір стрілкою вниз  ізі -->
+        <select>
+<option value="">Львів</option>
+<option value="">Київ</option>
+<option value="">Харків</option>
+        </select>
+
+        <!-- 6 -->
+        <!-- radio_з_id + label_з_for_і_текстом як checkbox лиш круглий hard -->
+        <input type="radio" name="city" value="" id="Lviv"> <label for="Lviv">Львів</label>
+        <input type="radio" name="city" value="" id="Kyiv"> <label for="Kyiv">Київ</label>
+        <input type="radio" name="city" value="" id="Harkiv"> <label for="Harkiv">Харків</label>
+
+        <!-- 7 -->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+
+        <!-- 8 -->
+        <input type="file">
+
+        <!-- 9 -->
+        <input type="date">
+        <input type="month">
+
+        <!-- 10 -->
+        <!-- range_з_id_min... + label_for_текст -->
+        <label for="range-input">Range input</label>
+        <input type="range" min="1" max="95" step="5" id="range-input">
+
+        <!-- 11 -->
+        <!-- color_з_id + label_for_текст -->
+        <label for="color-input">Color input</label>
+        <input type="color" id="color-input">
+    </form>
+
+    <!-- 1-й вид підкючення стилю (інлайновий)-->
+    <!-- style всередині як атриьїбут!!! -->
+    <!-- <p style=" color:red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe aperiam perferendis repellendus debitis molestias velit quidem sunt beatae ab, temporibus quasi esse quod quos porro, assumenda necessitatibus repudiandae neque perspiciatis.</p> -->
+
+
+    <!-- Рибний текст-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, laboriosam non eum expedita perferendis repudiandae assumenda molestias quod amet repellendus odit sapiente nesciunt, ipsam aperiam architecto vitae maiores optio praesentium.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempora qui quam, asperiores, minus illo recusandae amet maxime quibusdam aliquam reprehenderit, debitis vel voluptate modi laboriosam eum quo? Eveniet, assumenda?</p>
+
+    <p class="second-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, laboriosam non eum expedita perferendis repudiandae assumenda molestias quod amet repellendus odit sapiente nesciunt, ipsam aperiam architecto vitae maiores optio praesentium.</p>
+
+    <p id="third-paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, laboriosam non eum expedita perferendis repudiandae assumenda molestias quod amet repellendus odit sapiente nesciunt, ipsam aperiam architecto vitae maiores optio praesentium.</p>
+</body>
+
+</html>

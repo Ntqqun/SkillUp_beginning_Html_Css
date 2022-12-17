@@ -1,0 +1,31 @@
+body {
+    background-color: lightseagreen;
+}
+
+#p7 {
+    /*треба solid щоб рамку було видно*/
+    border: 3px solid blue;
+    font-size: 35px;
+    /*жирний шрифт */
+    font-weight: bold;
+}
+
+.p2_4_6 {
+    background-color: black;
+    color: white;
+    font-size: 27px;
+    /*підкреслений текст */
+    text-decoration: underline;
+    /* текст курсив - косий */
+    font-style: italic;
+}
+
+.p1_3_5_8_9_10 {
+    font-size: 25px;
+    /*dashed - це пунктирний*/
+    border-right: 3px dashed red;
+}
+
+span {
+    color: red;
+}

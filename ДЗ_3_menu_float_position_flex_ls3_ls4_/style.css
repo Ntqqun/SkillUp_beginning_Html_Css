@@ -1,0 +1,163 @@
+/* скидання стилів */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* header {
+   
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}    */
+
+
+/* дочірний улемент - той що в іншому тезі*/
+
+
+/* ul - блочний елемент - а блочні елементи "жирні" */
+
+ul {
+    background-color: green;
+    padding: 0;
+    /* ховання тексту - можна й для скролу ще
+     */
+    overflow: hidden;
+    /* забираю крапочки !!! */
+    list-style-type: none;
+}
+
+
+/* float в один рядок робить але вище owerflow hidden має бути!!!  не треба юзати float  float  схожий до flex - тоже в один рядок кладе елементи але float специфічний 
+float left означає що лівий верхній куток float: top - це уже не рядок а в стовпець */
+
+li {
+    float: left;
+}
+
+
+/* всі a які в li !!!*/
+
+li a {
+    /* перетвореня тегу в не блочний чеоез display */
+    display: inline-block;
+    color: white;
+    /* ! забирає щось */
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.active {
+    background-color: aqua;
+}
+
+
+/* Відступи з : не робити!!!!!! */
+
+
+/* при наведені */
+
+a:hover {
+    color: red;
+}
+
+main {
+    width: 700px;
+    height: 600px;
+    border: 3px solid black;
+    /* вирівнює по центру margin: auto */
+    margin: auto;
+    /* тінь по всім 4 сторонам */
+    box-shadow: 1px 1px 10px 10px red;
+}
+
+form {
+    /* схемка заповнення !!! */
+    width: 600px;
+    height: 600px;
+    background-color: antiquewhite;
+    margin: auto;
+    /* relative для батька */
+    position: relative;
+}
+
+.name {
+    /* absolute для дочірнього(дитини) */
+    position: absolute;
+    /* від ...!!! */
+    top: 130px;
+    left: 50px;
+}
+
+.email {
+    position: absolute;
+    top: 130px;
+    left: 200px;
+}
+
+.subject {
+    width: 500px;
+    position: absolute;
+    /* від ...!!! */
+    top: 230px;
+    left: 50px;
+}
+
+.button_1 {
+    width: 200px;
+    background-color: red;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+}
+
+section {
+    width: 700px;
+    height: 600px;
+    border: 3px solid black;
+    /* вирівнює по центру margin: auto */
+    margin: auto;
+    /* відступ між блоками тому лише 30px і тоже _від!!! !!! */
+    margin-top: 30px;
+    /* !!!!!! flex - робить в один рядок */
+    display: flex;
+    /* додатково для flex але  по горизонталі і вертикалі може!!! */
+    /* flex-start flex-end center !!! */
+    justify-content: space-between;
+    /* align-items та align-self додатково до flex flex-start flex-end center*/
+    align-items: center;
+    /* flex-direction це ще важливе і додаткове row column  row-reverse column-reverse */
+    /* додатково - коли не влазить в 1 рядок то переносить на інший*/
+    flex-wrap: wrap
+    /* order:1 тоже додатково до flex */
+    /* flex-flow: column wrap тоже додатково до flex */
+    /* align-content:flex-start для однакових відступів рядків */
+}
+
+div {
+    width: 250px;
+    height: 200px;
+    border: 3px solid black;
+    /*! не div задаю flex а section - батьку */
+    /* display: flex; */
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    /* округлення країв !!! */
+    border-radius: 15px;
+}
+
+
+/* .flex {
+    display: flex;
+    width: 1700px;
+    height: 600px;
+    border: 3px solid black;
+    margin: auto;
+    margin-top: 30px;
+} */
