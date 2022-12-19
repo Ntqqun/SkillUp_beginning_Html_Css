@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* ізі лиш border і вся рамка готова на весь екран */
+    border: 3px solid black;
+    width: 800px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: deepskyblue;
+}
+
+h4 {
+    margin-top: 30px;
+    text-align: center;
+    color: red;
+}
+
+.Name,
+.Email,
+.Subject,
+.Message,
+button {
+    width: 600px;
+    height: 250px;
+    margin: 20px;
+}
+
+button {
+    margin-bottom: 70px;
+    color: red;
+    background-color: white;
+}
+
+
+/* зміна кольору для placeholder */
+
+::-webkit-input-placeholder {
+    color: red;
+}
+
+@media (min-width:300px) and (max-width:800px) {
+    .container {
+        height: 800px;
+    }
+    .Name,
+    .Email,
+    .Subject,
+    .Message,
+    button {
+        width: 500px;
+        height: 100px;
+        margin: 20px;
+    }
+}

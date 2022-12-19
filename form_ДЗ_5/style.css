@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 12px;
+    color: #777;
+    font-weight: 100;
+    background-color: rgb(143, 225, 20);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact {
+    background-color: aliceblue;
+    padding: 25px;
+    margin: 150px 0;
+}
+
+h1 {
+    text-align: center;
+    size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 5px 0 15px;
+    text-align: center;
+    size: 15px;
+    font-weight: 300;
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    padding: 0;
+    width: 100%;
+}
+
+#input-name,
+#input-email,
+#input-number,
+#input-website,
+#input-textarea,
+#input-button {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#input-textarea {
+    height: 100px;
+    max-width: 100%;
+    /* ? */
+    resize: none;
+}
+
+#input-button {
+    /* ? */
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: chartreuse;
+    color: white;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+
+/* окремо з hover ! */
+
+#input-button:hover {
+    background-color: rgb(222, 33, 33);
+}
+
+.copyright {
+    text-align: center;
+}
+
+
+/* для телефону */
+
+@media (min-width:300px) and (max-width:800px) {
+    #input-name,
+    #input-email,
+    #input-number,
+    #input-website,
+    #input-textarea,
+    #input-button {
+        width: 80%;
+        margin-left: 45px;
+        padding: 15px;
+    }
+    body {
+        color: rgb(68, 0, 255);
+        background-color: darkorange;
+    }
+    #input-button {
+        background-color: darkorange;
+    }
+}
+
+@media (min-width:800px) and (max-width:1200px) {
+    body {
+        font-size: 45px;
+        color: rgb(68, 0, 255);
+    }
+}
